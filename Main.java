@@ -1,4 +1,4 @@
-package week2;
+
 import java.util.Scanner;
 
 // Transaction class to represent individual transactions
@@ -125,15 +125,15 @@ class ATM {
     // Method to display ATM menu
     public void displayMenu() {
         System.out.println("╔═══════════════════════════════════════╗");
-        System.out.println("║               ATM MENU                 ║");
+        System.out.println("║               ATM MENU                ║");
         System.out.println("╠═══════════════════════════════════════╣");
-        System.out.println("║ 1. View Transactions History           ║");
-        System.out.println("║ 2. Withdraw                            ║");
-        System.out.println("║ 3. Deposit                             ║");
-        System.out.println("║ 4. Transfer                            ║");
-        System.out.println("║ 5. Check Balance                       ║");
-        System.out.println("║ 6. Change PIN                          ║");
-        System.out.println("║ 7. Quit                                ║");
+        System.out.println("║ 1. View Transactions History          ║");
+        System.out.println("║ 2. Withdraw                           ║");
+        System.out.println("║ 3. Deposit                            ║");
+        System.out.println("║ 4. Transfer                           ║");
+        System.out.println("║ 5. Check Balance                      ║");
+        System.out.println("║ 6. Change PIN                         ║");
+        System.out.println("║ 7. Quit                               ║");
         System.out.println("╚═══════════════════════════════════════╝");
     }
 
@@ -220,7 +220,7 @@ class ATM {
     }
 }
 
-public class Main {
+public class Bank {
     public static void main(String[] args) {
         // Create multiple user accounts with initial balance of $1500
         Account[] accounts = new Account[25];
@@ -255,7 +255,7 @@ public class Main {
         // user input 
         Scanner scanner = new Scanner(System.in);
         System.out.println("╔═══════════════════════════════════════╗");
-        System.out.println("║           WELCOME TO THE ATM           ║");
+        System.out.println("║           WELCOME TO THE ATM          ║");
         System.out.println("╚═══════════════════════════════════════╝");
         System.out.print("Enter your user ID: ");
         String inputUserId = scanner.nextLine();
